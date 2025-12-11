@@ -1,5 +1,5 @@
 {
-  "name": "Nocturne Novels",
-  "description": "A premium, iOS-styled web novel platform featuring a dark mode aesthetic and smooth user experience.",
+  "name": "웹 소설",
+  "description": "전용 에디터와 미리보기 모드를 지원하는 iOS 스타일의 프리미엄 웹소설 플랫폼.",
   "requestFramePermissions": []
 }

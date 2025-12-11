@@ -1,20 +1,39 @@
-export interface Novel {
+export interface UserProfile {
+  uid: string;
+  email: string | null;
+  displayName: string | null;
+  photoURL: string | null;
+}
+
+export interface UserData {
+  uid: string;
+  tokens: number;
+  library: string[]; // Array of Novel IDs
+}
+
+export interface Chapter {
   id: string;
   title: string;
-  author: string;
-  coverUrl: string;
-  description: string;
-  rating: number;
-  views: number;
-  tags: string[];
-  status: '연재중' | '완결';
+  pages: string[]; // Changed from single content string to array of pages
+  order: number;
+  lastUpdated: number;
 }
 
-export type ViewState = 'HOME' | 'LIBRARY' | 'SEARCH' | 'PROFILE' | 'LOGIN' | 'SIGNUP' | 'NOVEL_DETAIL';
-
-export interface User {
+export interface Novel {
   id: string;
-  name: string;
-  email: string;
-  avatarUrl?: string;
+  authorId: string;
+  authorName: string;
+  title: string;
+  description: string;
+  coverUrl?: string;
+  tags: string[];
+  category?: string; // Added category
+  createdAt: number;
+  updatedAt: number;
+  isPublished: boolean;
+  chapterCount: number;
+  rating?: number;
 }
+
+export type ViewMode = 'list' | 'reader' | 'editor';
+export type DevicePreview = 'pc' | 'mobile';

@@ -1,5 +1,5 @@
 {
-  "name": "nocturne-novels",
+  "name": "웹-소설",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,8 +9,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "react-dom": "^19.2.0",
-    "react": "^19.2.0"
+    "react-dom": "^19.2.1",
+    "lucide-react": "^0.556.0",
+    "react": "^19.2.1",
+    "react-router-dom": "^7.10.1",
+    "firebase": "^12.6.0"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
